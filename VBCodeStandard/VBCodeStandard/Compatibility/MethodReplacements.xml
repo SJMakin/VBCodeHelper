@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<methods>
+  <method name="IsNothing" detectNotExpression="True">
+    <oldPattern>IsNothing(**expression**)</oldPattern>
+    <newPattern>**expression** Is Nothing</newPattern>
+    <newNotPattern>**expression** IsNot Nothing</newNotPattern>
+  </method>
+  <!--<method name="IsDBNull" detectNotExpression="False">
+    <oldPattern>IsDBNull(**expression**)</oldPattern>
+    <newPattern>**expression** Is DbNull.Value</newPattern>
+    <newNotPattern>Not **expression** Is DbNull.Value</newNotPattern>
+  </method>
+  <method name="Trim" detectNotExpression="False">
+    <oldPattern>Trim(**expression**)</oldPattern>
+    <newPattern>**expression**.Trim()</newPattern>
+    <newNotPattern></newNotPattern>
+  </method>-->
+  <!--<method name="VbCrlf" detectNotExpression="False">
+    <oldPattern>VbCrlf</oldPattern>
+    <newPattern>Environment.NewLine</newPattern>
+    <newNotPattern></newNotPattern>
+  </method>-->
+</methods>
